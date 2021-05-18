@@ -44,7 +44,7 @@ namespace MoviesAndActorsApi
             {
                 options.AddPolicy(
                   "CorsPolicy",
-                  builder => builder.WithOrigins("http://localhost:4200")
+                  builder => builder.WithOrigins("http://localhost:4200", "http://localhost:8080")
                   .AllowAnyMethod()
                   .AllowAnyHeader()
                   .AllowCredentials());
